@@ -1,6 +1,28 @@
+<div align="center">
+
 # Copilot Cowork Dojo 🏯
 
-> Your knowledge workers are untrained. Time to put them through the dojo.
+# A discipline framework for<br/>your Microsoft 365 Copilot work.
+
+---
+
+*End-to-end framework to take knowledge workers from casual Copilot use to measurable, repeatable business value.*
+
+[**Start Here**](./wiki/01-Start-Here.md) · [**Quickstart**](./wiki/03-Your-First-Session.md) · [**Wiki**](./wiki/Home.md) · [**Scenarios**](./scenarios) · [**Prompts**](./prompts/library.md) · [**Skills**](./skills.md)
+
+![license](https://img.shields.io/badge/license-MIT-1f6feb?style=flat-square)
+![version](https://img.shields.io/badge/version-1.0-3fb950?style=flat-square)
+![pipeline](https://img.shields.io/badge/pipeline-7%20steps-1f6feb?style=flat-square)
+![skills](https://img.shields.io/badge/skills-24-d2691e?style=flat-square)
+![scenarios](https://img.shields.io/badge/scenarios-4-8b5cf6?style=flat-square)
+![personas](https://img.shields.io/badge/personas-5-14b8a6?style=flat-square)
+![prompts](https://img.shields.io/badge/prompt%20patterns-15%2B-ec4899?style=flat-square)
+
+---
+
+</div>
+
+> *Your knowledge workers are untrained. Time to put them through the dojo.*
 
 A **skills & discipline framework for Microsoft 365 Copilot Cowork** — for the people who *use* Copilot every day to draft, decide, summarize, plan, brief, and ship knowledge work alongside agents.
 
@@ -10,7 +32,7 @@ Drop `skills/` + `prompts/` + `.github/copilot-instructions.md` into your team s
 
 > 🆕 **New here?** Start with the step-by-step [**Wiki**](./wiki/Home.md) — a 5-min orientation, your first session in 15 min, and persona-based shortcuts.
 
-Includes:
+## Includes
 
 - 24 production skills (6 core kata + 6 flow waza + 7 practical kumite + 3 multi-agent cowork + 2 meta dō)
 - Mandatory **CLARIFY → PLAN → DRAFT → REVIEW → REFINE → SHIP → LEARN** pipeline
