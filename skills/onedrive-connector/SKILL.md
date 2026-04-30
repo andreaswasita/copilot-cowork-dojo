@@ -5,11 +5,26 @@ description: >-
   Read, write, search, and share files in OneDrive / SharePoint via Copilot
   connectors. Use whenever the deliverable lives in a document library or a
   user's OneDrive — including grounding Copilot on a specific file or folder.
+  Triggers: "ground on this file", "save to SharePoint", "share with",
+  "find the latest version", "OneDrive link".
 ---
 
 # OneDrive / SharePoint Connector
 
 The file is the unit of governance. Sensitivity label, retention, sharing scope — all attach to the file, not the chat.
+
+---
+
+## Quick Reference
+
+| Task | Approach |
+|---|---|
+| Ground a session on a file | Resolve `driveId`+`itemId`; check sensitivity; attach |
+| Save a deliverable | Write to a draft path → verify → move/promote to published path |
+| Share with internal audience | *People in your org* (default for most artifacts) |
+| Share with external party | *Specific people* link, expiry set, audit logged |
+| Find latest version | Use version history, not file-naming guesswork |
+| Bulk operation | Dry-run on a single item; verify; then expand |
 
 ## When to Use
 
@@ -34,16 +49,43 @@ The file is the unit of governance. Sensitivity label, retention, sharing scope 
 | `sensitivityLabel` | Inherited from container — overriding requires rights. |
 | `sharingScope` | Anonymous links may be tenant-blocked; check before promising. |
 | `conflictBehavior` | `rename` vs. `replace` vs. `fail` — pick deliberately. |
+| `expirationDateTime` | External shares should default to time-bound. |
 
-## Known Pitfalls
+## Critical Rules
+
+- **Sensitivity label travels with the file** — and with anything you copy out of it.
+- **Sharing scope = audience contract.** "Anyone with the link" should require explicit reasoning, not be a default.
+- **Drafts go to a draft path.** Never save Copilot-in-progress work to the published filename.
+- **Version history is the audit trail.** Don't disable it to "clean up."
+- **Library defaults beat per-file overrides.** Configure the library; let files inherit.
+
+## Common Pitfalls
 
 - Saving externally-shareable output into a confidential library and breaking inheritance.
 - Reading from a SharePoint site you have access to but the audience does not — citing a URL nobody can open.
 - Assuming "OneDrive" and "SharePoint" are the same surface — they share an API but have different governance defaults.
 - Version explosion from autosave during a long Copilot session.
+- File-name conflicts that auto-rename to `report (3).docx` and break inbound links.
+- Overwriting a file someone else is editing (causes a fork, not an error).
 
 ## Anti-Patterns
 
 - Mailing a file as an attachment when a OneDrive link would track access and revoke cleanly.
 - Bulk renaming files via connector with no audit trail.
 - Granting *Anyone with the link* on a file referenced from a public deck — accidental disclosure.
+- Treating personal OneDrive as the team's source-of-truth.
+
+## Verify Before Sharing
+
+- [ ] File saved at the expected location with the expected name.
+- [ ] Sensitivity label set and matches content.
+- [ ] Sharing scope intentional; expiry set for external.
+- [ ] Audience can actually open the link (test with one external recipient if external).
+- [ ] Old versions / drafts not exposed via search to new audience.
+- [ ] DLP policies satisfied (no blocking warnings).
+
+## Related
+
+- [shipping-the-deliverable](../shipping-the-deliverable/SKILL.md), [protect-sensitive-info](../protect-sensitive-info/SKILL.md)
+- [word-authoring](../word-authoring/SKILL.md), [excel-analysis](../excel-analysis/SKILL.md), [deck-building](../deck-building/SKILL.md)
+- [teams-connector](../teams-connector/SKILL.md) — when sharing into a Teams channel
