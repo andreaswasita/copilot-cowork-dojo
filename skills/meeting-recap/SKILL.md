@@ -25,3 +25,17 @@ Format the recap so it can be pasted into a Teams channel or email — no preamb
 - Pasting the full transcript and calling it a recap.
 - Vague actions ("look into pricing"). Every action: verb + artifact + date.
 - Recaps you don't send within 24h. Memory decays fast.
+
+## Optional: Behavioral Insights Add-on
+
+For recurring meetings (weekly leadership, sprint reviews, steerco), produce a *second*, private companion to the recap — a behavioral readout. This is for the meeting owner only, never circulated.
+
+Ask Copilot to extract from the transcript:
+
+- **Speaking-time distribution** — who spoke for how long; flag if one voice exceeds 50% in a meeting of 6+.
+- **Filler-word density** — high counts ("like", "sort of", "I guess") often indicate uncertainty or under-preparation.
+- **Conflict-avoidance signals** — topics raised then dropped without resolution, hedged commitments ("we should probably"), unanswered questions.
+- **Decision velocity** — number of decisions reached vs. number on the agenda.
+- **Leadership patterns** — who closes loops, who opens new threads, who summarizes.
+
+Use this to coach the meeting, not the people. Never paste names + scores into a shared channel.

@@ -13,8 +13,8 @@
 ![license](https://img.shields.io/badge/license-MIT-1f6feb?style=flat-square)
 ![version](https://img.shields.io/badge/version-1.0-3fb950?style=flat-square)
 ![pipeline](https://img.shields.io/badge/pipeline-7%20steps-1f6feb?style=flat-square)
-![skills](https://img.shields.io/badge/skills-24-d2691e?style=flat-square)
-![scenarios](https://img.shields.io/badge/scenarios-4-8b5cf6?style=flat-square)
+![skills](https://img.shields.io/badge/skills-34-d2691e?style=flat-square)
+![scenarios](https://img.shields.io/badge/scenarios-5-8b5cf6?style=flat-square)
 ![personas](https://img.shields.io/badge/personas-5-14b8a6?style=flat-square)
 ![prompts](https://img.shields.io/badge/prompt%20patterns-15%2B-ec4899?style=flat-square)
 
@@ -36,7 +36,7 @@ Drop `skills/` + `prompts/` + `.github/copilot-instructions.md` into your team s
 
 ## Includes
 
-- 24 production skills (6 core kata + 6 flow waza + 7 practical kumite + 3 multi-agent cowork + 2 meta dō)
+- 34 production skills (6 core kata + 6 flow waza + 7 task kumite + 4 office kumite + 6 connector kumite + 3 multi-agent cowork + 2 meta dō)
 - Mandatory **CLARIFY → PLAN → DRAFT → REVIEW → REFINE → SHIP → LEARN** pipeline
 - Real-world scenario packs — HR, Finance, Sales, Project Management
 - Prompt library — patterns for the 80% of recurring knowledge work
@@ -120,6 +120,30 @@ Task-specific skills for the most common knowledge work.
 | [decision-memo](./skills/decision-memo/SKILL.md) | Context, options, recommendation, risks |
 | [status-update](./skills/status-update/SKILL.md) | Audience-tuned status (exec, team, stakeholder) |
 
+## Office Kumite — M365 ファイル
+
+Deliverable-surface skills for Word, Excel, PowerPoint, and PDFs.
+
+| Skill | |
+|---|---|
+| [word-authoring](./skills/word-authoring/SKILL.md) | Styles, tracked changes, comments, section structure |
+| [excel-analysis](./skills/excel-analysis/SKILL.md) | Formulas, pivots, charts, reconciliations |
+| [deck-building](./skills/deck-building/SKILL.md) | Storyboard-first PowerPoint with template discipline |
+| [pdf-extraction](./skills/pdf-extraction/SKILL.md) | Clean extraction of text, tables, metadata for grounding |
+
+## Connector Kumite — 連携
+
+Graph / connector-backed skills with tool sequences, parameter guidance, and known pitfalls.
+
+| Skill | |
+|---|---|
+| [teams-connector](./skills/teams-connector/SKILL.md) | Channels, chats, meeting transcripts, mentions |
+| [outlook-connector](./skills/outlook-connector/SKILL.md) | Mail triage, drafts, calendar scheduling |
+| [onedrive-connector](./skills/onedrive-connector/SKILL.md) | Files, sharing scope, sensitivity labels |
+| [planner-connector](./skills/planner-connector/SKILL.md) | Tasks, buckets, status roll-ups |
+| [jira-connector](./skills/jira-connector/SKILL.md) | JQL, issues, sprints, release notes |
+| [confluence-connector](./skills/confluence-connector/SKILL.md) | CQL, pages, decision records, runbooks |
+
 ## Multi-Agent Cowork — 共働
 
 Patterns for working *with multiple Copilot agents* and humans together.
@@ -161,6 +185,7 @@ End-to-end walkthroughs in [scenarios/](./scenarios):
 - [Finance](./scenarios/finance/scenario.md) — variance commentary, board pre-reads, audit responses
 - [Sales](./scenarios/sales/scenario.md) — account briefs, proposal drafts, QBR decks
 - [Project Management](./scenarios/project-management/scenario.md) — status, risk logs, steerco prep
+- [Legal](./scenarios/legal/scenario.md) — NDA triage, multi-party redline, Friday status synthesis
 
 ---
 

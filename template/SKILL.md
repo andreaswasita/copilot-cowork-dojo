@@ -1,5 +1,6 @@
 ---
 name: <skill-name-in-kebab-case>
+category: <kata | waza | kumite-task | kumite-office | kumite-connector | cowork | do>
 description: >-
   One paragraph. State precisely when the agent should activate this skill.
   Include trigger phrases and contexts. Be specific — vague descriptions
