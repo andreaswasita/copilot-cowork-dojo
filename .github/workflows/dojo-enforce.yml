@@ -1,0 +1,38 @@
+name: Cowork Dojo Enforcement
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  dojo-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify tasks/lessons.md exists
+        run: test -f tasks/lessons.md
+
+      - name: Verify tasks/todo.md is not the default template
+        run: |
+          if grep -q "REPLACE THIS WITH YOUR PLAN" tasks/todo.md; then
+            echo "::error::tasks/todo.md still contains the default template. Write a real plan."
+            exit 1
+          fi
+
+      - name: Verify helper scripts present
+        run: |
+          test -f scripts/init.ps1
+          test -f scripts/verify.ps1
+          test -f scripts/lesson-updater.ps1
+
+      - name: Verify skills.md references existing skills
+        run: |
+          missing=0
+          while IFS= read -r path; do
+            if [ ! -f "$path" ]; then
+              echo "::error::Missing skill referenced in skills.md: $path"
+              missing=1
+            fi
+          done < <(grep -oE 'skills/[a-z0-9-]+/SKILL.md' skills.md | sort -u)
+          exit $missing

@@ -1,0 +1,19 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local working files
+tasks/todo.local.md
+tasks/lessons.local.md
+
+# Memory vault generated artifacts
+memory/.link-graph.json
+
+# Secrets — never commit
+*.env
+.env*
+secrets.*
