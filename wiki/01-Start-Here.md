@@ -9,7 +9,7 @@ A small framework that turns *casual Copilot users* into *trained Copilot cowork
 It gives you:
 
 - A **7-step pipeline** so you stop skipping the steps that matter.
-- **24 named skills** so you and your team share a vocabulary.
+- **34 named skills** so you and your team share a vocabulary.
 - **Real-world scenarios** for HR, Finance, Sales, and Project Management.
 - **A prompt library** so you stop reinventing prompts from scratch.
 - **A memory vault** so the team gets smarter session by session.

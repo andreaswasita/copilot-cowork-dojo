@@ -4,7 +4,7 @@
 
 No. It's a folder of markdown files plus a few PowerShell helper scripts. The "tool" is your discipline; the dojo is the scaffold for it.
 
-## Do I need to use all 24 skills?
+## Do I need to use all 34 skills?
 
 No. The **6 core kata** are the foundation. Beyond those, use whichever **kumite** map to the deliverables you actually produce. Most users live inside 8–10 skills.
 

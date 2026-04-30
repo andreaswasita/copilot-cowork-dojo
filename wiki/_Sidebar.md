@@ -18,6 +18,7 @@
 - [10 — Roll Out](./10-Roll-Out-to-Your-Team.md)
 
 ### Reference
+- [Skill Catalog](./Skill-Catalog.md)
 - [FAQ](./FAQ.md)
 - [Troubleshooting](./Troubleshooting.md)
 - [Glossary](./Glossary.md)

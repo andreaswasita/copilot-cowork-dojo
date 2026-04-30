@@ -29,13 +29,14 @@ Pick the page that matches where you are.
 
 ## Reference
 
+- [Skill Catalog](./Skill-Catalog.md) — all 34 skills by category
 - [FAQ](./FAQ.md)
 - [Troubleshooting](./Troubleshooting.md)
 - [Glossary](./Glossary.md)
 
 ## The TL;DR if you read nothing else
 
-1. Knowledge workers using Copilot tend to skip steps, hallucinate, and re-do work. The dojo gives them a 7-step pipeline and 24 named skills so they don't.
+1. Knowledge workers using Copilot tend to skip steps, hallucinate, and re-do work. The dojo gives them a 7-step pipeline and 34 named skills so they don't.
 2. Pick **one real deliverable** you owe in the next 7 days.
 3. Open the matching scenario in [scenarios/](../scenarios) and run it end-to-end.
 4. Log a lesson in `tasks/lessons.md`.

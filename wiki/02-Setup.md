@@ -56,15 +56,43 @@ Dojo initialized. Next: pick a scenario from scenarios/ and run the pipeline.
 
 > ℹ️ `tasks/todo.md` is intentionally seeded with `REPLACE THIS WITH YOUR PLAN`. The CI gate fails until you replace it. That's the gate that forces you to actually plan.
 
-## Step 3 — Look around (90 seconds)
+## Step 3 — Install the skills into Cowork
+
+The 34 skills under [`skills/`](../skills) are how Cowork knows what to do when you say *"draft a decision memo"* or *"build the steerco deck."* You need to load them into Cowork's personal-skills folder so Cowork can discover them across sessions.
+
+### Option 1 — Upload via the Cowork chat (recommended)
+
+1. Zip the `skills/` folder:
+
+   ```powershell
+   $zip = "$env:USERPROFILE\Desktop\copilot-cowork-skills.zip"
+   if (Test-Path $zip) { Remove-Item $zip }
+   Compress-Archive -Path .\skills\* -DestinationPath $zip
+   ```
+
+2. Drag the zip into a Cowork chat and tell it:
+
+   > *Unzip this into my personal skills folder (`/mnt/user-config/.claude/skills/`). Each top-level folder contains a `SKILL.md` — preserve the structure. Then list what landed.*
+
+3. Cowork confirms the 34 skills are installed. They persist across sessions.
+
+### Option 2 — Point Cowork at the repo
+
+If your repo is public, paste this into Cowork:
+
+> *Clone `https://github.com/<owner>/copilot-cowork-dojo` and copy each folder under `skills/` into `/mnt/user-config/.claude/skills/`.*
+
+> ℹ️ Cowork runs in a cloud sandbox — it can't read files from your local machine directly. The zip-upload (or repo-clone) flow is how you bridge that gap.
+
+## Step 4 — Look around (90 seconds)
 
 Open these three files. Don't read them all — just see what's where:
 
 - [README.md](../README.md) — the front door.
-- [skills.md](../skills.md) — the master skills index.
+- [skills.md](../skills.md) — the master skills index. See also the [Skill Catalog](./Skill-Catalog.md) wiki page.
 - [.github/copilot-instructions.md](../.github/copilot-instructions.md) — the house rules Copilot follows in this workspace.
 
-## Step 4 — Verify
+## Step 5 — Verify
 
 ```powershell
 pwsh scripts/verify.ps1
@@ -74,9 +102,9 @@ You'll see:
 
 - ✅ `tasks/lessons.md present`
 - ⚠️ `tasks/todo.md still has the default template` ← this is **expected** until you write a plan
-- ✅ `skills.md references 24 skills, all present`
+- ✅ `skills.md references 34 skills, all present`
 
-## Step 5 — Sensitivity & data check
+## Step 6 — Sensitivity & data check
 
 Before your first real session, skim:
 
