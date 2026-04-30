@@ -26,6 +26,19 @@ JQL is the API. Master a small set of canonical queries and your status updates 
 | Bulk transition | Dry-run with one issue; verify automation didn't fire; then expand |
 | Cross-tenant work | Re-resolve custom field IDs; don't carry IDs across instances |
 
+## Prerequisites — this skill is a playbook, not the connector
+
+> ⚠️ **A `SKILL.md` cannot call Jira on its own.** It assumes the platform already exposes Jira as a tool. The skill teaches Cowork *how to use Jira well*; the connector itself is separate infrastructure.
+
+Before this skill works end-to-end you need:
+
+1. **A Jira MCP server** (or equivalent platform connector) installed and running, exposing tools like `JqlSearch`, `GetIssue`, `CreateIssue`, `TransitionIssue`. Examples: [Atlassian's official MCP](https://www.atlassian.com/platform/remote-mcp-server), `mcp-atlassian`, or a self-hosted wrapper around the Atlassian REST API.
+2. **Credentials** — Atlassian API token or OAuth session bound to your account, configured in the connector (not in this skill).
+3. **Network egress + tenant trust** — the connector must be able to reach `*.atlassian.net` from the Cowork environment with your auth.
+4. **Tool discovery** — confirm the tools are visible to Cowork in your session (ask Cowork: *"what Jira tools do you have?"*) before using this skill.
+
+If any of those are missing, this skill degrades gracefully to: *"Open Jira manually, run this JQL, paste the result back into chat."* It's still useful as a query reference — just not autonomous.
+
 ## When to Use
 
 - Pulling issue context into a [status-update](../status-update/SKILL.md), steerco pre-read, or release note.

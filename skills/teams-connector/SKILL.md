@@ -26,6 +26,20 @@ Teams is where the conversation lives. Treat it as a first-class data source —
 | Cross-team digest | Read each channel separately; cite per channel; never merge silently |
 | Find duplicates / prior decisions | Search by keyword + `from:` + date range before posting |
 
+## Prerequisites — this skill is a playbook, not the connector
+
+> ⚠️ **A `SKILL.md` cannot call Teams on its own.** It assumes the platform already exposes Microsoft Graph Teams as tools. The skill teaches Cowork *how to use Teams well*; the connector itself is separate infrastructure.
+
+Before this skill works end-to-end you need:
+
+1. **A Microsoft Graph / Teams connector** — typically Copilot Cowork's built-in M365 connectivity, or an MCP server wrapping `/teams/{id}/channels/{id}/messages`, `/chats`, and `/onlineMeetings` endpoints.
+2. **Credentials** — your Entra ID session with `ChannelMessage.Send` / `Chat.ReadWrite` / `OnlineMeetings.Read` scopes consented for the connector.
+3. **Membership** — you must be a member of the team / chat you're posting to or reading from.
+4. **Meeting transcripts** — require the meeting organizer to have enabled transcription/recording, and your role must allow access.
+5. **Tool discovery** — confirm Teams tools are visible (ask Cowork: *"what Teams tools do you have?"*) before using this skill.
+
+In Cowork on a properly licensed M365 tenant, this is usually present out of the box. On other surfaces, you'll need an MCP connector explicitly installed.
+
 ## When to Use
 
 - Pulling channel/chat history as grounded context for a recap or status update.

@@ -84,6 +84,8 @@ If your repo is public, paste this into Cowork:
 
 > ℹ️ Cowork runs in a cloud sandbox — it can't read files from your local machine directly. The zip-upload (or repo-clone) flow is how you bridge that gap.
 
+> ⚠️ **Skills ≠ connectors.** The 6 `*-connector` skills are *playbooks* for how to use Jira / Confluence / Teams / Outlook / OneDrive / Planner well. They do **not** install the connectors themselves. M365 connectors are usually present in Cowork on a licensed M365 tenant. Atlassian (Jira, Confluence) needs a separate MCP server install — see each connector skill's *Prerequisites* section. Without the connector, the skill is still useful as a manual reference; it just can't act autonomously.
+
 ## Step 4 — Look around (90 seconds)
 
 Open these three files. Don't read them all — just see what's where:

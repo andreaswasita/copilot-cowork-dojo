@@ -71,6 +71,8 @@ M365 app deliverables. Use after the matching task skill.
 
 MS Graph + external systems. Use when the source or destination of work lives in one of these tools.
 
+> ⚠️ **These skills are playbooks, not the connectors themselves.** A `SKILL.md` cannot call Jira/Teams/etc. on its own — it assumes the underlying tools (MCP server, OAuth/API token, network egress, tenant trust) are already installed and visible to Cowork. M365 connectors (Outlook, Teams, OneDrive, Planner) are usually present out of the box on a licensed M365 tenant. **Atlassian connectors (Jira, Confluence) require a separate MCP server install** — see each skill's "Prerequisites" section. Without the connector, the skill degrades to a manual reference ("run this JQL yourself, paste the result back").
+
 | Skill | System |
 |---|---|
 | [outlook-connector](../skills/outlook-connector/SKILL.md) | Outlook mail + calendar |

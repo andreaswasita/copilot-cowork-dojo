@@ -26,6 +26,19 @@ Confluence is wiki-as-knowledge-graph. Use page hierarchy and labels — they're
 | Cross-link to Jira | Use Jira macro by issue key — not raw URL |
 | Archive an old page | Add `archived` label, move to archive parent — don't delete |
 
+## Prerequisites — this skill is a playbook, not the connector
+
+> ⚠️ **A `SKILL.md` cannot call Confluence on its own.** It assumes the platform already exposes Confluence as a tool. The skill teaches Cowork *how to use Confluence well*; the connector itself is separate infrastructure.
+
+Before this skill works end-to-end you need:
+
+1. **A Confluence MCP server** (or equivalent platform connector) installed and running, exposing tools like `SearchPages`, `GetPage`, `CreatePage`, `UpdatePage`. Examples: Atlassian's remote MCP, `mcp-atlassian`, or a wrapper around the Confluence REST API.
+2. **Credentials** — Atlassian API token or OAuth session bound to your account, configured in the connector.
+3. **Network egress + tenant trust** — the connector must be able to reach `*.atlassian.net/wiki` from the Cowork environment with your auth.
+4. **Tool discovery** — confirm Confluence tools are visible (ask Cowork: *"what Confluence tools do you have?"*) before using this skill.
+
+If any of those are missing, this skill degrades to a manual reference: *"Search Confluence yourself with these CQL patterns and paste the result back."*
+
 ## When to Use
 
 - Grounding [research-synthesis](../research-synthesis/SKILL.md) on a space's existing decisions / RFCs.

@@ -26,6 +26,19 @@ The file is the unit of governance. Sensitivity label, retention, sharing scope 
 | Find latest version | Use version history, not file-naming guesswork |
 | Bulk operation | Dry-run on a single item; verify; then expand |
 
+## Prerequisites — this skill is a playbook, not the connector
+
+> ⚠️ **A `SKILL.md` cannot call OneDrive / SharePoint on its own.** It assumes the platform already exposes Microsoft Graph as a tool. The skill teaches Cowork *how to use OneDrive / SharePoint well*; the connector itself is separate infrastructure.
+
+Before this skill works end-to-end you need:
+
+1. **A Microsoft Graph connector** — typically Copilot Cowork's built-in M365 connectivity, or an MCP server wrapping the Graph `/me/drive` and `/sites/{id}/drives` endpoints.
+2. **Credentials** — your Entra ID session with `Files.Read.All` / `Files.ReadWrite.All` / `Sites.Read.All` scopes consented for the connector.
+3. **Tenant policies** — sensitivity labels, DLP, and conditional access must permit the connector to read the files you reference.
+4. **Tool discovery** — confirm Graph file tools are visible (ask Cowork: *"what file/SharePoint tools do you have?"*) before using this skill.
+
+In Cowork on a properly licensed M365 tenant, this is usually present out of the box. On other surfaces (e.g. a stripped-down sandbox), you'll need an MCP connector explicitly installed.
+
 ## When to Use
 
 - Grounding a Copilot session on a specific file, folder, or library.

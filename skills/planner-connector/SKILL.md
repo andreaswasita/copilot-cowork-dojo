@@ -26,6 +26,19 @@ A status update is only as good as the underlying task data. Make Planner the so
 | Reconcile two trackers | Pick one as canonical; mirror only one direction |
 | Recurring template | Save the checklist as a Planner template, not as instructions in chat |
 
+## Prerequisites — this skill is a playbook, not the connector
+
+> ⚠️ **A `SKILL.md` cannot call Planner on its own.** It assumes the platform already exposes Microsoft Graph Planner / Tasks as tools. The skill teaches Cowork *how to use Planner well*; the connector itself is separate infrastructure.
+
+Before this skill works end-to-end you need:
+
+1. **A Microsoft Graph connector** — typically Copilot Cowork's built-in M365 connectivity, or an MCP server wrapping `/planner/plans`, `/planner/tasks`, and (for Premium) Project for the Web endpoints.
+2. **Credentials** — your Entra ID session with `Tasks.ReadWrite` / `Group.Read.All` scopes consented for the connector.
+3. **Plan membership** — you must be a member of the underlying M365 Group for the plan you're operating on.
+4. **Tool discovery** — confirm Planner tools are visible (ask Cowork: *"what Planner tools do you have?"*) before using this skill.
+
+In Cowork on a properly licensed M365 tenant, this is usually present out of the box. On other surfaces, you'll need an MCP connector explicitly installed.
+
 ## When to Use
 
 - Converting meeting actions into Planner tasks with owners and due dates.

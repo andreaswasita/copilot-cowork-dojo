@@ -25,6 +25,19 @@ Email is the most overloaded surface in the enterprise. Use Copilot to triage an
 | Search a mailbox | KQL with sender + date range + folder filter |
 | Bulk action | Dry-run first; never auto-send via rules |
 
+## Prerequisites — this skill is a playbook, not the connector
+
+> ⚠️ **A `SKILL.md` cannot call Outlook on its own.** It assumes the platform already exposes Microsoft Graph mail / calendar as tools. The skill teaches Cowork *how to use Outlook well*; the connector itself is separate infrastructure.
+
+Before this skill works end-to-end you need:
+
+1. **A Microsoft Graph connector** — typically Copilot Cowork's built-in M365 connectivity, or an MCP server wrapping the Graph `/me/messages` and `/me/events` endpoints.
+2. **Credentials** — your Entra ID session with `Mail.Read` / `Mail.Send` / `Calendars.ReadWrite` scopes consented for the connector.
+3. **Tenant policies** — mail flow, retention, and DLP rules must permit programmatic access.
+4. **Tool discovery** — confirm mail / calendar tools are visible (ask Cowork: *"what Outlook tools do you have?"*) before using this skill.
+
+In Cowork on a properly licensed M365 tenant, this is usually present out of the box. On other surfaces, you'll need an MCP connector explicitly installed.
+
 ## When to Use
 
 - Triaging a backlog (see [email-triage](../email-triage/SKILL.md)).
