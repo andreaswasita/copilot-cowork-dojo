@@ -8,6 +8,8 @@ Where the [Copilot Agents Dojo](https://github.com/andreaswasita/copilot-agents-
 
 Drop `skills/` + `prompts/` + `.github/copilot-instructions.md` into your team space → Copilot Cowork sessions auto-discover and follow the workflow.
 
+> 🆕 **New here?** Start with the step-by-step [**Wiki**](./wiki/Home.md) — a 5-min orientation, your first session in 15 min, and persona-based shortcuts.
+
 Includes:
 
 - 24 production skills (6 core kata + 6 flow waza + 7 practical kumite + 3 multi-agent cowork + 2 meta dō)
