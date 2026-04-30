@@ -8,7 +8,7 @@
 
 *End-to-end framework to take knowledge workers from casual Copilot use to measurable, repeatable business value.*
 
-[**Start Here**](./wiki/01-Start-Here.md) · [**Quickstart**](./wiki/03-Your-First-Session.md) · [**Wiki**](./wiki/Home.md) · [**Scenarios**](./scenarios) · [**Prompts**](./prompts/library.md) · [**Skills**](./skills.md)
+[**📖 Wiki**](./wiki/Home.md) · [**Start Here**](./wiki/01-Start-Here.md) · [**Quickstart**](./wiki/03-Your-First-Session.md) · [**Scenarios**](./scenarios) · [**Prompts**](./prompts/library.md) · [**Skills**](./skills.md)
 
 ![license](https://img.shields.io/badge/license-MIT-1f6feb?style=flat-square)
 ![version](https://img.shields.io/badge/version-1.0-3fb950?style=flat-square)
@@ -30,7 +30,9 @@ Where the [Copilot Agents Dojo](https://github.com/andreaswasita/copilot-agents-
 
 Drop `skills/` + `prompts/` + `.github/copilot-instructions.md` into your team space → Copilot Cowork sessions auto-discover and follow the workflow.
 
-> 🆕 **New here?** Start with the step-by-step [**Wiki**](./wiki/Home.md) — a 5-min orientation, your first session in 15 min, and persona-based shortcuts.
+> 🆕 **New here?** Start with the step-by-step **[📖 Wiki](./wiki/Home.md)** — a 5-min orientation, your first session in 15 min, and persona-based shortcuts.
+>
+> ℹ️ The Wiki lives in [`./wiki/`](./wiki/) inside this repo (the GitHub Wiki *tab* is disabled by enterprise policy on this tenant — the in-repo wiki is the canonical version).
 
 ## Includes
 

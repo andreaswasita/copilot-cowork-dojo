@@ -13,9 +13,9 @@ title: Copilot Cowork Dojo
 
 *End-to-end framework to take knowledge workers from casual Copilot use to measurable, repeatable business value.*
 
+[**📖 Wiki**](https://github.com/andreaswasita/copilot-cowork-dojo/tree/main/wiki) ·
 [**Start Here**](https://github.com/andreaswasita/copilot-cowork-dojo/blob/main/wiki/01-Start-Here.md) ·
 [**Quickstart**](https://github.com/andreaswasita/copilot-cowork-dojo/blob/main/wiki/03-Your-First-Session.md) ·
-[**Wiki**](https://github.com/andreaswasita/copilot-cowork-dojo/wiki) ·
 [**Scenarios**](https://github.com/andreaswasita/copilot-cowork-dojo/tree/main/scenarios) ·
 [**Prompts**](https://github.com/andreaswasita/copilot-cowork-dojo/blob/main/prompts/library.md) ·
 [**GitHub**](https://github.com/andreaswasita/copilot-cowork-dojo)
