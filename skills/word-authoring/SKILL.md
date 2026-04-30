@@ -2,37 +2,97 @@
 name: word-authoring
 category: kumite-office
 description: >-
-  Author, edit, and review Word documents with Copilot — using styles, tracked
-  changes, comments, and section structure. Use whenever the deliverable is a
-  .docx (memo, policy, report, contract redline, briefing pack), not a chat
-  message.
+  Author, edit, review, and ship Word (.docx) deliverables with M365 Copilot —
+  using Word styles, tracked changes, comments, sections, and templates. Use
+  whenever the deliverable is a Word document (memo, policy, report, briefing
+  pack, contract redline, board pre-read), not a chat message or quick note.
+  Triggers: "draft a memo", "write a report", "review this Word doc",
+  "redline", "tracked changes", "policy document", ".docx".
 ---
 
 # Word Authoring
 
-Word is not a long email. Use structure: styles, headings, comments, and tracked changes — that's how Word docs get reviewed and approved in the real world.
+Word is not a long email. Use structure — styles, headings, comments, tracked changes — that's how Word docs get reviewed and approved in the real world.
+
+> Cowork skill, not an agent skill. This skill governs how a *human* drives Copilot in Word. For programmatic .docx generation (docx-js, OOXML), use the agents dojo.
+
+---
+
+## Quick Reference
+
+| Task | Approach |
+|---|---|
+| New document | Open the team template first; draft section-by-section with Copilot |
+| Edit someone else's doc | Turn on **Track Changes** before any Copilot edit |
+| Long document refactor | Outline view → restructure headings → regenerate sections |
+| Review a draft | Copilot summary + your structured review (facts, tone, gaps, bias) |
+| Convert format (memo ↔ deck ↔ email) | Storyboard the new format first; don't auto-convert |
+| Find / replace at scale | Word's built-in Find/Replace with styles, then verify three samples |
 
 ## When to Use
 
 - Drafting any deliverable longer than one screen.
 - Editing an existing document where the reviewer expects tracked changes.
-- Producing branded, template-conformant docs (board memo, policy, SOW).
+- Producing branded, template-conformant docs (board memo, policy, SOW, audit response).
+- Multi-author collaboration where attribution matters.
 
 ## How to Use
 
-1. **Anchor the template first.** Open the document or attach it before prompting. Tell Copilot which heading styles exist (`Heading 1`, `Heading 2`, `Quote`).
-2. **Draft section by section, not all at once.** "Draft Section 2 — Background — using the attached briefing as source." Each section is a verifiable unit.
+1. **Anchor the template first.** Open the document or attach it before prompting. Tell Copilot which heading styles exist (`Heading 1`, `Heading 2`, `Quote`, `Caption`).
+2. **Draft section by section, not all at once.** *"Draft Section 2 — Background — using the attached briefing as source."* Each section is a verifiable unit.
 3. **Use Copilot for revisions as tracked changes**, not silent overwrites. Ask: *"Apply these edits as tracked changes I can accept individually."*
-4. **Comments for open questions.** When Copilot is unsure, instruct it to insert a Word comment rather than guess.
-5. **Verify the table of contents and cross-references** after every structural edit.
+4. **Comments for open questions.** When Copilot is unsure, instruct it to insert a Word comment (margin) rather than guess inline.
+5. **Headers, footers, page numbers, ToC** — generate after structure is stable. ToC must be regenerated manually after major edits.
+6. **Verify the table of contents and cross-references** after every structural edit.
+7. **Final pass: accept-all + sensitivity label + audience check** before sending.
 
 ## Examples
 
-- ❌ "Write me a 5-page strategy doc." → ✅ "Using the attached one-pager, draft Section 3 (Risks) with three Heading-2 risks, each with mitigation in a sub-bullet."
-- ❌ Pasting Copilot output into a blank doc and emailing it. → ✅ Drafting into the team's approved template, accepting/rejecting tracked changes, then sending.
+| ❌ Anti-example | ✅ Good example |
+|---|---|
+| "Write me a 5-page strategy doc." | "Using the attached one-pager, draft Section 3 (Risks) with three Heading-2 risks; mitigation as sub-bullets." |
+| Pasting Copilot output into a blank doc and emailing. | Drafting into the team template, accepting/rejecting tracked changes, sensitivity-labeled, then sending. |
+| "Edit this doc to be more concise." | "Reduce Section 4 by ~30% as tracked changes. Preserve every numeric figure and every cited source." |
+| Auto-generated bullets in a numbered-headings template. | Bullets only inside body paragraphs; numbering matches the template's outline. |
+
+## Critical Rules
+
+- **Always work inside the approved template.** Out-of-template formatting breaks downstream tooling (PDF export, accessibility, search).
+- **Track Changes on for any doc you don't own.** Off = silent rewrite = trust incident.
+- **One section per Copilot turn** for substantive edits. Big-bang prompts produce un-reviewable diffs.
+- **Quote sources verbatim** when the deliverable is legal, regulatory, or contractual. Paraphrase ≠ binding.
+- **Verify tables, citations, and figures** by hand. Copilot reflows numbers more often than it should.
+- **Sensitivity label before share** — and re-check after every external send.
+- **Use the comment feature for unknowns** instead of inventing content.
+
+## Common Pitfalls
+
+- One mega-prompt for the whole document — impossible to review, easy to ship hallucinations.
+- Bypassing tracked changes on a doc someone else owns. They lose their audit trail.
+- Auto-formatted bullets where the template uses numbered headings — breaks export.
+- Headers/footers regenerated by Copilot that strip the tenant logo or classification banner.
+- Stale ToC / cross-references after a re-structure — must regenerate (`F9` in Word).
+- Pasting from a different sensitivity tier — labels do **not** auto-downgrade.
+- Smart-quote / dash inconsistency between Copilot output and template body. Run Find/Replace.
 
 ## Anti-Patterns
 
-- One mega-prompt for the whole document — impossible to review.
-- Bypassing tracked changes on a doc someone else owns. They can't see what you changed.
-- Auto-formatted bullets where the template uses numbered headings — breaks downstream tooling.
+- "Make it sound more executive" — vague; restate as audience + length + tone.
+- Letting Copilot pick the layout / cover page / styles — you'll get inconsistent siblings.
+- Treating the Word "rewrite" suggestion as the deliverable. It's a draft, not a ship.
+
+## Verify Before Send
+
+- [ ] Template + styles intact (no foreign fonts / colors).
+- [ ] Tracked changes accepted **or** explicitly left for the reviewer.
+- [ ] All Copilot-inserted comments resolved.
+- [ ] ToC, cross-references, page numbers regenerated.
+- [ ] Sensitivity label set; classification banner correct.
+- [ ] Citations open and resolve to the cited content.
+- [ ] Spell/grammar pass; reading-level appropriate to audience.
+
+## Related
+
+- [drafting-with-copilot](../drafting-with-copilot/SKILL.md), [reviewing-output](../reviewing-output/SKILL.md), [shipping-the-deliverable](../shipping-the-deliverable/SKILL.md)
+- [cite-your-sources](../cite-your-sources/SKILL.md), [protect-sensitive-info](../protect-sensitive-info/SKILL.md)
+- [onedrive-connector](../onedrive-connector/SKILL.md) — where the file lives and who can see it
