@@ -21,6 +21,7 @@ the workflow concepts are adapted from the Apache-2.0 sources listed below.
 | `skills/doc-coauthoring` | `skills/doc-coauthoring` |
 | `skills/connector-builder` | `skills/mcp-builder` (renamed) |
 | `skills/brand-consistency` | `skills/brand-guidelines` (renamed) |
+| `skills/skill-creator` | `skills/skill-creator` (test-drive iteration loop and description-optimization methodology merged into our existing skill) |
 
 No proprietary or source-available upstream content (the `docx`, `pdf`, `pptx`,
 `xlsx` skills) was copied. Where this repo's existing skills were informed by
