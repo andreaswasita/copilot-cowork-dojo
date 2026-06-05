@@ -29,7 +29,7 @@ Pick the page that matches where you are.
 
 ## Reference
 
-- [Skill Catalog](./Skill-Catalog.md) — all 34 skills by category
+- [Skill Catalog](./Skill-Catalog.md) — all 38 skills by category
 - [FAQ](./FAQ.md)
 - [Troubleshooting](./Troubleshooting.md)
 - [Glossary](./Glossary.md)

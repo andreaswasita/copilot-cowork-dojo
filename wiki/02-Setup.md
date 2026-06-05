@@ -58,7 +58,7 @@ Dojo initialized. Next: pick a scenario from scenarios/ and run the pipeline.
 
 ## Step 3 — Install the skills into Cowork
 
-The 34 skills under [`skills/`](../skills) are how Cowork knows what to do when you say *"draft a decision memo"* or *"build the steerco deck."* You need to load them into Cowork's personal-skills folder so Cowork can discover them across sessions.
+The 38 skills under [`skills/`](../skills) are how Cowork knows what to do when you say *"draft a decision memo"* or *"build the steerco deck."* You need to load them into Cowork's personal-skills folder so Cowork can discover them across sessions.
 
 ### Option 1 — Upload via the Cowork chat (recommended)
 
@@ -74,7 +74,7 @@ The 34 skills under [`skills/`](../skills) are how Cowork knows what to do when 
 
    > *Unzip this into my personal skills folder (`/mnt/user-config/.claude/skills/`). Each top-level folder contains a `SKILL.md` — preserve the structure. Then list what landed.*
 
-3. Cowork confirms the 34 skills are installed. They persist across sessions.
+3. Cowork confirms the 38 skills are installed. They persist across sessions.
 
 ### Option 2 — Point Cowork at the repo
 
@@ -104,7 +104,7 @@ You'll see:
 
 - ✅ `tasks/lessons.md present`
 - ⚠️ `tasks/todo.md still has the default template` ← this is **expected** until you write a plan
-- ✅ `skills.md references 34 skills, all present`
+- ✅ `skills.md references 38 skills, all present`
 
 ## Step 6 — Sensitivity & data check
 

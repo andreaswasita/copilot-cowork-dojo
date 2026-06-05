@@ -1,6 +1,6 @@
 # Skill Catalog
 
-All **34 skills** in the dojo, grouped by category. Each row links to the skill folder in the repo. Skills follow the [rich Anthropic-style format](#about-the-skill-format) — frontmatter + Quick Reference + Examples + Verify checklist + cross-links.
+All **38 skills** in the dojo, grouped by category. Each row links to the skill folder in the repo. Skills follow the [rich Anthropic-style format](#about-the-skill-format) — frontmatter + Quick Reference + Examples + Verify checklist + cross-links.
 
 ## At a glance
 
@@ -8,9 +8,9 @@ All **34 skills** in the dojo, grouped by category. Each row links to the skill 
 |---|---|---|
 | [Kata](#kata--core-disciplines) | 6 | Core disciplines you practice every session |
 | [Waza](#waza--pipeline-techniques) | 6 | Pipeline techniques (one per CLARIFY → SHIP step) |
-| [Kumite — task](#kumitetask--end-to-end-deliverables) | 7 | End-to-end task playbooks |
-| [Kumite — office](#kumiteoffice--m365-app-deliverables) | 4 | M365 app deliverables (Word, Excel, PowerPoint, PDF) |
-| [Kumite — connector](#kumiteconnector--ms-graph--external-systems) | 6 | MS Graph + external system connectors |
+| [Kumite — task](#kumitetask--end-to-end-deliverables) | 9 | End-to-end task playbooks |
+| [Kumite — office](#kumiteoffice--m365-app-deliverables) | 5 | M365 app deliverables (Word, Excel, PowerPoint, PDF) |
+| [Kumite — connector](#kumiteconnector--ms-graph--external-systems) | 7 | MS Graph + external system connectors |
 | [Cowork](#cowork--multi-agent--humanintheloop) | 3 | Multi-agent + human-in-the-loop patterns |
 | [Do](#do--meta-skills) | 2 | Meta-skills (authoring + reviewing skills) |
 
@@ -55,6 +55,8 @@ End-to-end playbooks for common deliverables.
 | [meeting-recap](../skills/meeting-recap/SKILL.md) | Recap of decisions, actions, and owners — not a transcript. |
 | [research-synthesis](../skills/research-synthesis/SKILL.md) | Synthesize multiple sources into a single point of view with citations. |
 | [status-update](../skills/status-update/SKILL.md) | Audience-tuned weekly/monthly/steerco status update. |
+| [internal-comms](../skills/internal-comms/SKILL.md) | Org-wide comms in house formats: 3P updates, newsletters, FAQs, leadership/incident updates. |
+| [doc-coauthoring](../skills/doc-coauthoring/SKILL.md) | Co-author a long structured doc in three stages: context, section-by-section refinement, cold-reader testing. |
 
 ## Kumite — office
 
@@ -66,6 +68,7 @@ M365 app deliverables. Use after the matching task skill.
 | [excel-analysis](../skills/excel-analysis/SKILL.md) | Excel | Pivots, variance, reconciliation, forecasts, Power Query. |
 | [deck-building](../skills/deck-building/SKILL.md) | PowerPoint | QBRs, steerco, board pre-reads, all-hands. |
 | [pdf-extraction](../skills/pdf-extraction/SKILL.md) | PDF | Pull text, tables, citations from contracts, filings, scanned forms. |
+| [brand-consistency](../skills/brand-consistency/SKILL.md) | Word / PPT / Teams / Viva | Apply org brand tokens — colors, fonts, logo, contrast — across any deliverable. |
 
 ## Kumite — connector
 
@@ -81,6 +84,7 @@ MS Graph + external systems. Use when the source or destination of work lives in
 | [planner-connector](../skills/planner-connector/SKILL.md) | Microsoft Planner / Tasks / Project for the Web |
 | [jira-connector](../skills/jira-connector/SKILL.md) | Jira (issues, JQL, sprints, release notes) |
 | [confluence-connector](../skills/confluence-connector/SKILL.md) | Confluence (runbooks, decision records, RFCs) |
+| [connector-builder](../skills/connector-builder/SKILL.md) | Builder skill: design/review a custom connector or MCP server for Copilot |
 
 ## Cowork — multi-agent + human-in-the-loop
 
@@ -123,7 +127,7 @@ description: >-
 ## Quick Reference            ← scannable table — outcome at a glance
 ## When to Use                 ← triggers + when NOT to use
 ## How to Use                  ← step-by-step
-## Examples                    ← ❌ bad / ✅ good comparison table
+## Examples                    ← Don't: / Do: comparison table (plain text, no emoji)
 ## Critical Rules              ← non-negotiables
 ## Common Pitfalls             ← what goes wrong
 ## Anti-Patterns               ← what looks right but isn't

@@ -29,12 +29,15 @@ Master index — auto-discovered by Copilot. Each skill is a folder under `skill
 - [research-synthesis](./skills/research-synthesis/SKILL.md)
 - [decision-memo](./skills/decision-memo/SKILL.md)
 - [status-update](./skills/status-update/SKILL.md)
+- [internal-comms](./skills/internal-comms/SKILL.md)
+- [doc-coauthoring](./skills/doc-coauthoring/SKILL.md)
 
 ## Office Kumite — M365 ファイル
 - [word-authoring](./skills/word-authoring/SKILL.md)
 - [excel-analysis](./skills/excel-analysis/SKILL.md)
 - [deck-building](./skills/deck-building/SKILL.md)
 - [pdf-extraction](./skills/pdf-extraction/SKILL.md)
+- [brand-consistency](./skills/brand-consistency/SKILL.md)
 
 ## Connector Kumite — 連携
 - [teams-connector](./skills/teams-connector/SKILL.md)
@@ -43,6 +46,7 @@ Master index — auto-discovered by Copilot. Each skill is a folder under `skill
 - [planner-connector](./skills/planner-connector/SKILL.md)
 - [jira-connector](./skills/jira-connector/SKILL.md)
 - [confluence-connector](./skills/confluence-connector/SKILL.md)
+- [connector-builder](./skills/connector-builder/SKILL.md)
 
 ## Multi-Agent Cowork — 共働
 - [agent-handoff](./skills/agent-handoff/SKILL.md)

@@ -36,7 +36,7 @@ Drop `skills/` + `prompts/` + `.github/copilot-instructions.md` into your team s
 
 ## Includes
 
-- 34 production skills (6 core kata + 6 flow waza + 7 task kumite + 4 office kumite + 6 connector kumite + 3 multi-agent cowork + 2 meta dō)
+- 38 production skills (6 core kata + 6 flow waza + 9 task kumite + 5 office kumite + 7 connector kumite + 3 multi-agent cowork + 2 meta dō)
 - Mandatory **CLARIFY → PLAN → DRAFT → REVIEW → REFINE → SHIP → LEARN** pipeline
 - Real-world scenario packs — HR, Finance, Sales, Project Management
 - Prompt library — patterns for the 80% of recurring knowledge work
@@ -119,6 +119,8 @@ Task-specific skills for the most common knowledge work.
 | [research-synthesis](./skills/research-synthesis/SKILL.md) | Multi-source synthesis with traceable citations |
 | [decision-memo](./skills/decision-memo/SKILL.md) | Context, options, recommendation, risks |
 | [status-update](./skills/status-update/SKILL.md) | Audience-tuned status (exec, team, stakeholder) |
+| [internal-comms](./skills/internal-comms/SKILL.md) | 3P updates, newsletters, FAQs, leadership/incident updates |
+| [doc-coauthoring](./skills/doc-coauthoring/SKILL.md) | Long structured docs in three stages with cold-reader testing |
 
 ## Office Kumite — M365 ファイル
 
@@ -130,6 +132,7 @@ Deliverable-surface skills for Word, Excel, PowerPoint, and PDFs.
 | [excel-analysis](./skills/excel-analysis/SKILL.md) | Formulas, pivots, charts, reconciliations |
 | [deck-building](./skills/deck-building/SKILL.md) | Storyboard-first PowerPoint with template discipline |
 | [pdf-extraction](./skills/pdf-extraction/SKILL.md) | Clean extraction of text, tables, metadata for grounding |
+| [brand-consistency](./skills/brand-consistency/SKILL.md) | Apply org brand tokens across Word, PowerPoint, Teams, Viva |
 
 ## Connector Kumite — 連携
 
@@ -143,6 +146,7 @@ Graph / connector-backed skills with tool sequences, parameter guidance, and kno
 | [planner-connector](./skills/planner-connector/SKILL.md) | Tasks, buckets, status roll-ups |
 | [jira-connector](./skills/jira-connector/SKILL.md) | JQL, issues, sprints, release notes |
 | [confluence-connector](./skills/confluence-connector/SKILL.md) | CQL, pages, decision records, runbooks |
+| [connector-builder](./skills/connector-builder/SKILL.md) | Design/review a custom connector or MCP server for Copilot |
 
 ## Multi-Agent Cowork — 共働
 
@@ -252,5 +256,9 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 ## License
 
 [MIT](./LICENSE)
+
+Some skills are original-voice translations of Apache-2.0 skills from
+[anthropics/skills](https://github.com/anthropics/skills); see [NOTICE.md](./NOTICE.md)
+for attribution.
 
 ⭐ Star this dojo if you're done watching your team copy-paste prompts. Fork it, train your coworkers, earn your belt.
