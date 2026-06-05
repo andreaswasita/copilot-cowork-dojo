@@ -19,9 +19,9 @@ JQL is the API. Master a small set of canonical queries and your status updates 
 
 | Task | Approach |
 |---|---|
-| Status for a sprint | `project = X AND sprint in openSprints()` → group by status |
+| Status for a sprint | `project = X AND sprint in openSprints()` -> group by status |
 | Stuck items | `status = "In Progress" AND updated < -7d` |
-| Release notes | `fixVersion = "vX.Y" AND status = Done` → group by component |
+| Release notes | `fixVersion = "vX.Y" AND status = Done` -> group by component |
 | Create from action | Pick project + parent epic; set priority + labels; link back |
 | Bulk transition | Dry-run with one issue; verify automation didn't fire; then expand |
 | Cross-tenant work | Re-resolve custom field IDs; don't carry IDs across instances |
@@ -67,7 +67,7 @@ If any of those are missing, this skill degrades gracefully to: *"Open Jira manu
 
 ## Examples
 
-| ❌ Anti-pattern | ✅ Right move |
+| Don't: Anti-pattern | Do: Right move |
 |---|---|
 | Transition an issue by status name | Use the workflow's `transitionId` — names collide across projects |
 | Hardcode `customfield_10001` across tenants | Re-resolve custom field IDs per Jira instance |

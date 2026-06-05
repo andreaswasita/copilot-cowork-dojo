@@ -42,7 +42,7 @@ Template:
 
 ## Examples
 
-| ❌ Vague refine | ✅ Specific refine |
+| Don't: Vague refine | Do: Specific refine |
 |---|---|
 | "Make it more concise." | "Cut section 1 from 4 paragraphs to 3 sentences. Keep the recommendation, drop the history." |
 | "Make it less corporate." | "Drop 'leverage', 'synergy', 'going forward'. Use direct verbs." |

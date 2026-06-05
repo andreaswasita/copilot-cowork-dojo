@@ -3,7 +3,7 @@ name: agent-orchestration
 category: cowork
 description: >-
   Sequence specialist agents and humans around a single goal. Use for
-  multi-step deliverables — e.g. research → synthesis → draft → review →
+  multi-step deliverables — e.g. research -> synthesis -> draft -> review ->
   publish. Triggers: "set up the pipeline", "orchestrate agents",
   "research-then-draft", multi-stage workflow.
 ---
@@ -25,7 +25,7 @@ You are the conductor. Each agent is one section of the orchestra.
 
 ## When to Use
 
-- Multi-stage deliverables (research → synthesis → draft → review → publish).
+- Multi-stage deliverables (research -> synthesis -> draft -> review -> publish).
 - Any pipeline that crosses agent specializations or includes a human gate.
 - When the same pipeline will run again (e.g., monthly competitive scan).
 
@@ -40,12 +40,12 @@ You are the conductor. Each agent is one section of the orchestra.
 Example pipeline:
 
 ```
-research-agent → synthesis-agent → HUMAN review → comms-agent → HUMAN ship gate
+research-agent -> synthesis-agent -> HUMAN review -> comms-agent -> HUMAN ship gate
 ```
 
 ## Examples
 
-| ❌ Pipeline failure | ✅ Pipeline success |
+| Don't: Pipeline failure | Do: Pipeline success |
 |---|---|
 | Chain agents with no gates | Each transition has a gate condition stated |
 | One human gate at the very end | Human gates wherever judgment / sensitivity / decision lives |
@@ -66,7 +66,7 @@ research-agent → synthesis-agent → HUMAN review → comms-agent → HUMAN sh
 - Orchestrations no human ever inspects.
 - Reusing yesterday's pipeline for a different shape of problem.
 - Pipeline complexity that exceeds the deliverable's value.
-- No log → no replay → no improvement.
+- No log -> no replay -> no improvement.
 
 ## Anti-Patterns
 

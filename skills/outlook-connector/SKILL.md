@@ -18,9 +18,9 @@ Email is the most overloaded surface in the enterprise. Use Copilot to triage an
 
 | Task | Approach |
 |---|---|
-| Triage an inbox | Bucket → drafts → human review → send |
+| Triage an inbox | Bucket -> drafts -> human review -> send |
 | Reply in-thread | Use `conversationId`; never auto-rewrite the subject |
-| Schedule a meeting | Find free/busy across attendees → propose 3 slots → book on confirmation |
+| Schedule a meeting | Find free/busy across attendees -> propose 3 slots -> book on confirmation |
 | Forward externally | Strip earlier internal-only messages; remove sensitive attachments |
 | Search a mailbox | KQL with sender + date range + folder filter |
 | Bulk action | Dry-run first; never auto-send via rules |
@@ -66,7 +66,7 @@ In Cowork on a properly licensed M365 tenant, this is usually present out of the
 
 ## Examples
 
-| ❌ Anti-pattern | ✅ Right move |
+| Don't: Anti-pattern | Do: Right move |
 |---|---|
 | Let Copilot auto-send a drafted reply | Draft to the Outlook drafts folder; a human reviews, then sends |
 | Rewrite the subject line on a reply | Keep the existing subject; reply by `conversationId` to preserve threading |

@@ -3,7 +3,7 @@ name: intent-framing
 category: waza
 description: >-
   Frame audience, outcome, format, and constraints into one short brief that
-  every subsequent prompt builds on. Use as the first step of the CLARIFY →
+  every subsequent prompt builds on. Use as the first step of the CLARIFY ->
   PLAN pipeline for any non-trivial deliverable. Triggers: opening a new
   Cowork session, switching topics mid-session, "let's draft a…".
 ---
@@ -44,7 +44,7 @@ Reference it in every follow-up: *"Per the frame, keep this under 200 words."*
 
 ## Examples
 
-| ❌ Frameless | ✅ Framed |
+| Don't: Frameless | Do: Framed |
 |---|---|
 | "Help me write something about Q3" | "Audience: SLT · Outcome: approve Q3 reforecast · Format: 1-page memo · Constraints: ≤500 words, neutral tone, must include cash bridge" |
 | "Draft a deck" | "Audience: board · Outcome: ratify acquisition · Format: 8 slides max · Constraints: financials on slide 4, risks on slide 6" |
@@ -62,7 +62,7 @@ Reference it in every follow-up: *"Per the frame, keep this under 200 words."*
 - Vague format ("a doc") — pick the artifact type.
 - Audience drift — frame says "exec", drafts default to peer-level.
 - Re-framing in every prompt instead of pinning once.
-- Missing deadline → no urgency → endless polishing.
+- Missing deadline -> no urgency -> endless polishing.
 
 ## Anti-Patterns
 
@@ -81,6 +81,6 @@ Reference it in every follow-up: *"Per the frame, keep this under 200 words."*
 
 ## Related
 
-- [clarify-the-ask](../clarify-the-ask/SKILL.md) → [plan-before-prompt](../plan-before-prompt/SKILL.md)
+- [clarify-the-ask](../clarify-the-ask/SKILL.md) -> [plan-before-prompt](../plan-before-prompt/SKILL.md)
 - [context-gathering](../context-gathering/SKILL.md), [drafting-with-copilot](../drafting-with-copilot/SKILL.md)
 - [agent-handoff](../agent-handoff/SKILL.md) — frame travels in the handoff packet

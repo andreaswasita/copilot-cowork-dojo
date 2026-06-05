@@ -22,10 +22,10 @@ Excel mistakes ship to executives. Verify every formula and every total before t
 
 | Task | Approach |
 |---|---|
-| Summarize a sheet | Define schema first → ask Copilot for column-by-column profile |
+| Summarize a sheet | Define schema first -> ask Copilot for column-by-column profile |
 | Pivot / cross-tab | Name rows, columns, values, filters explicitly |
-| Reconcile two sources | Key column on both sides → `XLOOKUP` or merged Power Query, then exception list |
-| Variance commentary | Pivot → top-N drivers → narrative grounded in the pivot, not vibes |
+| Reconcile two sources | Key column on both sides -> `XLOOKUP` or merged Power Query, then exception list |
+| Variance commentary | Pivot -> top-N drivers -> narrative grounded in the pivot, not vibes |
 | Forecast | State assumptions, horizon, granularity; never accept hidden constants |
 | Chart for a deck | Specify chart type, axes, units, sort order — never "make a nice chart" |
 | Find a bug | Trace precedents/dependents; ask Copilot to explain the formula in English |
@@ -50,7 +50,7 @@ Excel mistakes ship to executives. Verify every formula and every total before t
 
 ## Examples
 
-| ❌ Anti-example | ✅ Good example |
+| Don't: Anti-example | Do: Good example |
 |---|---|
 | "Analyze this spreadsheet." | "Build a pivot: rows = product line, cols = month, values = sum(net revenue). Then a 3-month rolling average column." |
 | Trusting `XLOOKUP` without testing the unmatched case. | Test with a deliberately missing key; confirm the `if_not_found` argument. |
@@ -64,7 +64,7 @@ Excel mistakes ship to executives. Verify every formula and every total before t
 - **No hard-coded totals.** If it should be a formula, make it a formula. Hardcodes go stale silently.
 - **Reconcile against a known control** before publishing any number.
 - **Document assumptions in a dedicated `Assumptions` sheet** — every analyst will thank you.
-- **Pivot tables must be refreshed** before the file leaves your hands (`Data → Refresh All`).
+- **Pivot tables must be refreshed** before the file leaves your hands (`Data -> Refresh All`).
 - **Never let Copilot invent units.** Currency, scale (millions vs. thousands), period — confirm explicitly.
 
 ## Common Pitfalls

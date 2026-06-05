@@ -42,7 +42,7 @@ Every claim in the final output cites which source supports it.
 
 ## Examples
 
-| ❌ Summary masquerading as synthesis | ✅ Real synthesis |
+| Don't: Summary masquerading as synthesis | Do: Real synthesis |
 |---|---|
 | "All four reports agree growth is slowing." | "Reports A, B agree on slowing; C disagrees citing different methodology; synthesis: directionally slowing, magnitude contested." |
 | No so-what | "So-what: hold off the Q4 expansion plan until the C methodology is replicated." |

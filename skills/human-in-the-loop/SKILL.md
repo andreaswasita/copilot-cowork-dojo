@@ -18,12 +18,12 @@ Automation is leverage. Unsupervised automation is risk. The human-in-the-loop s
 
 | Risk | Gate? | Why |
 |---|---|---|
-| External communication | ✅ Always | Customer / partner / regulator visible |
-| Money, people, legal | ✅ Always | Decisions with consequence |
-| Personal / regulated data | ✅ Always | Compliance |
-| Diverges from prior pattern | ✅ Always | Novelty = risk |
-| Internal cosmetic edit | ❌ | No risk → no gate |
-| Routine roll-up matching prior | ❌ | Pattern + low blast = no gate |
+| External communication | Do: Always | Customer / partner / regulator visible |
+| Money, people, legal | Do: Always | Decisions with consequence |
+| Personal / regulated data | Do: Always | Compliance |
+| Diverges from prior pattern | Do: Always | Novelty = risk |
+| Internal cosmetic edit | Don't: | No risk -> no gate |
+| Routine roll-up matching prior | Don't: | Pattern + low blast = no gate |
 
 ## When to Use
 
@@ -44,7 +44,7 @@ In the orchestration, mark steps as `[HUMAN]`. For each, name:
 
 ## Examples
 
-| ❌ Gate failure | ✅ Gate success |
+| Don't: Gate failure | Do: Gate success |
 |---|---|
 | "Manager approval" with no criteria | "Director of comms verifies tone + recipient list before send" |
 | Gate after publishing | Gate before publishing — a loop, not an apology |
@@ -65,7 +65,7 @@ In the orchestration, mark steps as `[HUMAN]`. For each, name:
 - Generic "manager approval" with no criteria.
 - Over-gating — every step becomes a human bottleneck.
 - Under-gating — sensitive content slips externally.
-- No fallback → unavailable human stalls the pipeline.
+- No fallback -> unavailable human stalls the pipeline.
 
 ## Anti-Patterns
 

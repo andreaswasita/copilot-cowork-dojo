@@ -42,11 +42,11 @@ Copilot is only as good as the context it can see. Spend the two minutes to brin
 
 ## Examples
 
-| ❌ Context-light | ✅ Context-gathered |
+| Don't: Context-light | Do: Context-gathered |
 |---|---|
 | "Draft a recap" with no transcript | Attach transcript + attendee list + last week's recap |
 | "Update the deck" with no deck attached | Attach the deck; cite the slide numbers being updated |
-| Pasting an email body into chat | Use the connector → reply uses thread context |
+| Pasting an email body into chat | Use the connector -> reply uses thread context |
 | "Summarize what Priya said" from memory | Pull Priya's actual message; cite |
 
 ## Critical Rules

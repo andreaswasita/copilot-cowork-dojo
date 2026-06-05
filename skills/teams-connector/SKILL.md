@@ -19,10 +19,10 @@ Teams is where the conversation lives. Treat it as a first-class data source —
 
 | Task | Approach |
 |---|---|
-| Read channel context | Resolve `teamId`+`channelId` → list recent messages → cite |
-| Read meeting transcript | Wait until processing complete → pull by `meetingId` |
-| Post a recap to a channel | Compose in Word/Loop draft → verify → post via connector |
-| @mention real people | Resolve display name → AAD object ID, then mention |
+| Read channel context | Resolve `teamId`+`channelId` -> list recent messages -> cite |
+| Read meeting transcript | Wait until processing complete -> pull by `meetingId` |
+| Post a recap to a channel | Compose in Word/Loop draft -> verify -> post via connector |
+| @mention real people | Resolve display name -> AAD object ID, then mention |
 | Cross-team digest | Read each channel separately; cite per channel; never merge silently |
 | Find duplicates / prior decisions | Search by keyword + `from:` + date range before posting |
 
@@ -67,7 +67,7 @@ In Cowork on a properly licensed M365 tenant, this is usually present out of the
 
 ## Examples
 
-| ❌ Anti-pattern | ✅ Right move |
+| Don't: Anti-pattern | Do: Right move |
 |---|---|
 | Post "@John" by display name and assume he's notified | Resolve John to his AAD object ID, then @mention so he is actually pinged |
 | Pull the meeting transcript the moment the call ends | Wait until processing completes, then fetch by `meetingId` (early reads return empty) |

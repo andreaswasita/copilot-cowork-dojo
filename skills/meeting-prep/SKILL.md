@@ -40,7 +40,7 @@ A great meeting is decided before it starts. Copilot is excellent at producing t
 
 ## Examples
 
-| ❌ Weak prep | ✅ Strong prep |
+| Don't: Weak prep | Do: Strong prep |
 |---|---|
 | Agenda: "Q3 update · open discussion" | Agenda: "Q3 reforecast — decide approve/revise (15min) · top risk — decide accept/escalate (10min)" |
 | Pre-reads: "see attached deck" | Pre-reads: "Deck (slide 4 = ask) · Risk register (rows 2,5,7) · Customer note (1 page)" |
@@ -60,7 +60,7 @@ A great meeting is decided before it starts. Copilot is excellent at producing t
 - Pre-reads that are longer than the meeting.
 - Letting Copilot invent attendee positions ("Priya supports X").
 - Inviting more people than needed — every extra invitee dilutes the decision.
-- No time budget per item → agenda overruns.
+- No time budget per item -> agenda overruns.
 
 ## Anti-Patterns
 

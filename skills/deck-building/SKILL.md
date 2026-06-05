@@ -21,10 +21,10 @@ A good deck has one idea per slide and a story across slides. Copilot will happi
 
 | Task | Approach |
 |---|---|
-| New deck from scratch | Storyboard takeaway titles first → one slide per Copilot turn |
+| New deck from scratch | Storyboard takeaway titles first -> one slide per Copilot turn |
 | Refresh existing deck with new data | Anchor the template; replace data slide-by-slide; verify charts |
-| Memo → deck | Storyboard the deck — don't auto-convert; the memo's structure ≠ slide structure |
-| Deck → memo | Extract takeaway titles + speaker notes → expand into prose |
+| Memo -> deck | Storyboard the deck — don't auto-convert; the memo's structure ≠ slide structure |
+| Deck -> memo | Extract takeaway titles + speaker notes -> expand into prose |
 | Add speaker notes | Always ask explicitly — Copilot omits notes by default |
 | Tighten a long deck | Cut to 6–10 takeaway titles; collapse appendix; respect the time box |
 
@@ -47,7 +47,7 @@ A good deck has one idea per slide and a story across slides. Copilot will happi
 
 ## Examples
 
-| ❌ Anti-example | ✅ Good example |
+| Don't: Anti-example | Do: Good example |
 |---|---|
 | "Make me a 10-slide deck on our Q1 results." | Provide 10 takeaway titles + the source workbook; ask Copilot to build one slide per turn against the template. |
 | Accepting auto-generated stock photos for an external customer deck. | Use only template-approved imagery; flag missing assets with a comment. |

@@ -48,12 +48,12 @@ If any step fails, fix or remove. Never ship "probably right."
 
 ## Examples
 
-| ❌ Skipped | ✅ Verified |
+| Don't: Skipped | Do: Verified |
 |---|---|
-| "Variance commentary cites $4.2M shortfall" — sent | Open the latest report → confirmed $4.17M → corrected |
-| Recap names "Priya owns risk mitigation" — sent | Confirmed Priya wasn't even at the meeting → reassigned |
-| "Per the Gartner study…" — sent | Couldn't find the study → cut the sentence |
-| "Click here for details" link sent | Opened the link → 404 → fixed before send |
+| "Variance commentary cites $4.2M shortfall" — sent | Open the latest report -> confirmed $4.17M -> corrected |
+| Recap names "Priya owns risk mitigation" — sent | Confirmed Priya wasn't even at the meeting -> reassigned |
+| "Per the Gartner study…" — sent | Couldn't find the study -> cut the sentence |
+| "Click here for details" link sent | Opened the link -> 404 -> fixed before send |
 
 ## Critical Rules
 

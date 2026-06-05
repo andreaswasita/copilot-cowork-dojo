@@ -51,7 +51,7 @@ Then ask Copilot to draft *one section at a time*, feeding it the relevant sourc
 
 ## Examples
 
-| ❌ Unplanned | ✅ Planned |
+| Don't: Unplanned | Do: Planned |
 |---|---|
 | "Write me a 2-page memo on X" | Skeleton with Context / Options / Reco named, then "draft section 2 from [source]" |
 | Reprompting "make it shorter" 5 times | Skeleton with explicit word budget per section |

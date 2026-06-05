@@ -41,11 +41,11 @@ The draft is cheap. Treat it as a starting block, not a finish line.
 
 ## Examples
 
-| ❌ One-shot | ✅ Section-by-section |
+| Don't: One-shot | Do: Section-by-section |
 |---|---|
-| "Write the whole memo." | "Draft section 2 (Risks). Use [risk log]. 4 bullets. Each bullet: risk → owner → mitigation. No invented owners." |
+| "Write the whole memo." | "Draft section 2 (Risks). Use [risk log]. 4 bullets. Each bullet: risk -> owner -> mitigation. No invented owners." |
 | "Make it creative." | "Draft the exec summary. ≤80 words. Lead with the recommendation." |
-| "Fill in the deck." | "Draft slide 4 only. One chart: revenue by region. Reference [Q3 workbook → Region tab]." |
+| "Fill in the deck." | "Draft slide 4 only. One chart: revenue by region. Reference [Q3 workbook -> Region tab]." |
 
 ## Critical Rules
 

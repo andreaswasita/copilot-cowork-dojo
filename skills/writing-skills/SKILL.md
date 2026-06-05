@@ -17,18 +17,18 @@ A SKILL.md must look the same across the dojo so agents can parse it without sur
 
 | Slot | Required? |
 |---|---|
-| YAML frontmatter (`name`, `category`, `description`) | ✅ |
-| `# Title` | ✅ |
-| One-line tagline | ✅ |
-| `## Quick Reference` (table) | ✅ |
-| `## When to Use` | ✅ |
-| `## How to Use` | ✅ |
-| `## Examples` (❌/✅ table) | ✅ |
-| `## Critical Rules` | ✅ |
-| `## Common Pitfalls` | ✅ |
-| `## Anti-Patterns` | ✅ |
-| `## Verify Before <action>` (checklist) | ✅ |
-| `## Related` | ✅ |
+| YAML frontmatter (`name`, `category`, `description`) | Yes |
+| `# Title` | Yes |
+| One-line tagline | Yes |
+| `## Quick Reference` (table) | Yes |
+| `## When to Use` | Yes |
+| `## How to Use` | Yes |
+| `## Examples` (Don't:/Do: table) | Yes |
+| `## Critical Rules` | Yes |
+| `## Common Pitfalls` | Yes |
+| `## Anti-Patterns` | Yes |
+| `## Verify Before <action>` (checklist) | Yes |
+| `## Related` | Yes |
 
 ## When to Use
 
@@ -68,7 +68,7 @@ One-line summary.
 Step-by-step or numbered list.
 
 ## Examples
-| ❌ Anti | ✅ Pro |
+| Don't: Anti | Do: Pro |
 
 ## Critical Rules
 - ...
@@ -92,12 +92,12 @@ Step-by-step or numbered list.
 - `category` is one of: `kata`, `waza`, `kumite-task`, `kumite-office`, `kumite-connector`, `cowork`, `do`.
 - `description` is what Copilot uses to activate the skill — be specific; include trigger phrases.
 - Body is short — a junior teammate can read it in under 90 seconds.
-- No emojis in skill bodies (✅ / ❌ in the Examples table are allowed; they're structural).
+- No emojis anywhere in skills, including the Examples table. Use plain-text labels (`Don't:` / `Do:`) for comparisons.
 - No invented stats or external links unless verified.
 
 ## Examples
 
-| ❌ Format failure | ✅ Format success |
+| Don't: Format failure | Do: Format success |
 |---|---|
 | Missing `category` | `category: kata` (or appropriate) |
 | `description` says "use this skill for stuff" | `description` lists 3 trigger phrases + scenario |
@@ -118,8 +118,8 @@ Step-by-step or numbered list.
 - Long backstory before the rules.
 - Describing the skill's history instead of how to use it.
 - Anti-Patterns that lists examples without saying *why* they fail.
-- Vague description → never triggered.
-- No Related → siblings invisible.
+- Vague description -> never triggered.
+- No Related -> siblings invisible.
 
 ## Anti-Patterns
 
@@ -134,7 +134,7 @@ Step-by-step or numbered list.
 - [ ] `category` set to a valid value.
 - [ ] `description` includes specific trigger phrases.
 - [ ] All required sections present (see Quick Reference).
-- [ ] Examples uses ❌ / ✅ table.
+- [ ] Examples uses a plain-text `Don't:` / `Do:` comparison table (no emoji).
 - [ ] Critical Rules + Common Pitfalls + Anti-Patterns are distinct (not duplicated).
 - [ ] Verify checklist matches the action.
 - [ ] Related links resolve.

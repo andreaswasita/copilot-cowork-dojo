@@ -41,7 +41,7 @@ Format the recap so it can be pasted into a Teams channel or email — no preamb
 
 ## Examples
 
-| ❌ Transcript-recap | ✅ Decision-recap |
+| Don't: Transcript-recap | Do: Decision-recap |
 |---|---|
 | "We discussed pricing and it was a long conversation…" | "**Decision**: Adopt option B pricing, effective Q4 (decided by SLT)." |
 | "Action: look into pricing" | "**Action**: Maria — draft pricing FAQ for sales by Fri 11/14." |

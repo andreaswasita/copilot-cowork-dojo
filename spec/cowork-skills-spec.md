@@ -54,5 +54,5 @@ In this order:
 
 ## Lifecycle
 
-- New → tested in 1 real session → indexed → promoted to a belt table.
+- New -> tested in 1 real session -> indexed -> promoted to a belt table.
 - Skills not used in 90 days are reviewed: refresh, merge, or retire.

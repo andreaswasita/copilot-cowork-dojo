@@ -39,7 +39,7 @@ Inbox zero is a fad. Decision-zero is the goal — every message either acted on
 
 ## Examples
 
-| ❌ Triage anti-pattern | ✅ Triage done right |
+| Don't: Triage anti-pattern | Do: Triage done right |
 |---|---|
 | Read everything top-to-bottom | Bucket first, draft second |
 | Auto-send Copilot drafts | Read every draft; verify commitments |

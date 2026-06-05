@@ -20,7 +20,7 @@ The file is the unit of governance. Sensitivity label, retention, sharing scope 
 | Task | Approach |
 |---|---|
 | Ground a session on a file | Resolve `driveId`+`itemId`; check sensitivity; attach |
-| Save a deliverable | Write to a draft path → verify → move/promote to published path |
+| Save a deliverable | Write to a draft path -> verify -> move/promote to published path |
 | Share with internal audience | *People in your org* (default for most artifacts) |
 | Share with external party | *Specific people* link, expiry set, audit logged |
 | Find latest version | Use version history, not file-naming guesswork |
@@ -66,7 +66,7 @@ In Cowork on a properly licensed M365 tenant, this is usually present out of the
 
 ## Examples
 
-| ❌ Anti-pattern | ✅ Right move |
+| Don't: Anti-pattern | Do: Right move |
 |---|---|
 | Save in-progress Copilot work over the published filename | Write to a draft path, verify, then promote to the published path |
 | Grant "Anyone with the link" by default | Default to "People in your org"; reserve anonymous links for a reasoned exception |

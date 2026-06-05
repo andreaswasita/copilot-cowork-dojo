@@ -20,8 +20,8 @@ Confluence is wiki-as-knowledge-graph. Use page hierarchy and labels — they're
 | Task | Approach |
 |---|---|
 | Find prior art | CQL by `space` + `label` + `lastmodified` — before creating |
-| Publish a decision | Resolve `parentId` → create with `decision` label → link to RFC |
-| Update a runbook | Read `storage` representation → edit → publish with version bump |
+| Publish a decision | Resolve `parentId` -> create with `decision` label -> link to RFC |
+| Update a runbook | Read `storage` representation -> edit -> publish with version bump |
 | Find duplicates | `title ~ "..."` across the space; merge before adding |
 | Cross-link to Jira | Use Jira macro by issue key — not raw URL |
 | Archive an old page | Add `archived` label, move to archive parent — don't delete |
@@ -76,7 +76,7 @@ If any of those are missing, this skill degrades to a manual reference: *"Search
 
 ## Examples
 
-| ❌ Anti-pattern | ✅ Right move |
+| Don't: Anti-pattern | Do: Right move |
 |---|---|
 | Create a page with no parent | Resolve `parentId` first — orphan pages don't get found |
 | Edit the rendered HTML view | Edit the `storage` representation for round-trippable changes |
@@ -96,7 +96,7 @@ If any of those are missing, this skill degrades to a manual reference: *"Search
 - Editing a page without setting `version.number` correctly — concurrency conflict.
 - Macros that depend on app-specific permissions (Jira issues macro) silently render empty for other readers.
 - Personal spaces vs. team spaces — auto-created personal pages are the source of most "I can't find it" complaints.
-- Lossy round-trip when converting markdown → storage → markdown.
+- Lossy round-trip when converting markdown -> storage -> markdown.
 - Page titles that don't surface in CQL `title ~` because of stop-word stripping.
 - Comments and inline reactions lost when copy-pasting from rendered view.
 

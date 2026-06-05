@@ -19,10 +19,10 @@ A status update is only as good as the underlying task data. Make Planner the so
 
 | Task | Approach |
 |---|---|
-| Convert meeting actions to tasks | Resolve `planId`+`bucketId` → create with owner + due → link back |
-| Roll up status for steerco | Filter by bucket / label / owner → render as table |
+| Convert meeting actions to tasks | Resolve `planId`+`bucketId` -> create with owner + due -> link back |
+| Roll up status for steerco | Filter by bucket / label / owner -> render as table |
 | Reassign departed colleague's tasks | Bulk update with audit comment; never silent |
-| Spot drift | Tasks past due > 14d, or unowned for > 7d → flag |
+| Spot drift | Tasks past due > 14d, or unowned for > 7d -> flag |
 | Reconcile two trackers | Pick one as canonical; mirror only one direction |
 | Recurring template | Save the checklist as a Planner template, not as instructions in chat |
 
@@ -66,7 +66,7 @@ In Cowork on a properly licensed M365 tenant, this is usually present out of the
 
 ## Examples
 
-| ❌ Anti-pattern | ✅ Right move |
+| Don't: Anti-pattern | Do: Right move |
 |---|---|
 | Bulk-create tasks with no owners | Assign a single current owner plus a due date to every task |
 | Silently reassign a departed colleague's tasks | Bulk-reassign with an audit comment explaining the change |

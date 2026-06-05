@@ -46,7 +46,7 @@ Then ship.
 
 ## Examples
 
-| ❌ Skipped gate | ✅ Gate held |
+| Don't: Skipped gate | Do: Gate held |
 |---|---|
 | Send a memo with "// TODO: confirm number" | Replace with verified number or cut the sentence |
 | Forward a deck without removing internal-only slides | Strip; re-cite; re-verify sharing scope |

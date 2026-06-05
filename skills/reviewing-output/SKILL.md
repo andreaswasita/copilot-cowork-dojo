@@ -46,9 +46,9 @@ Mark each lens GREEN / AMBER / RED and address every RED / AMBER in the next ref
 
 ## Examples
 
-| ❌ Surface review | ✅ Five-lens review |
+| Don't: Surface review | Do: Five-lens review |
 |---|---|
-| "Looks good, send it." | Facts AMBER (one number unsourced) · Tone GREEN · Omissions RED (no risk section) → refine |
+| "Looks good, send it." | Facts AMBER (one number unsourced) · Tone GREEN · Omissions RED (no risk section) -> refine |
 | Skim for typos | Reopen sources; verify three claims at random |
 | "Make it better" | Name the lens that failed and the specific defect |
 
@@ -85,6 +85,6 @@ Mark each lens GREEN / AMBER / RED and address every RED / AMBER in the next ref
 
 ## Related
 
-- [drafting-with-copilot](../drafting-with-copilot/SKILL.md) → [refining-iteratively](../refining-iteratively/SKILL.md)
+- [drafting-with-copilot](../drafting-with-copilot/SKILL.md) -> [refining-iteratively](../refining-iteratively/SKILL.md)
 - [verify-before-send](../verify-before-send/SKILL.md), [shipping-the-deliverable](../shipping-the-deliverable/SKILL.md)
 - [cite-your-sources](../cite-your-sources/SKILL.md)

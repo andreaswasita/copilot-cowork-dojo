@@ -2,10 +2,10 @@
 name: agent-handoff
 category: cowork
 description: >-
-  Pass context cleanly between Copilot agents (e.g. analyst agent → comms
+  Pass context cleanly between Copilot agents (e.g. analyst agent -> comms
   agent). Use whenever a deliverable spans more than one specialist agent
   or persona. Triggers: "hand off to", switching agents, multi-agent
-  pipeline, agent A → agent B.
+  pipeline, agent A -> agent B.
 ---
 
 # Agent Handoff
@@ -54,7 +54,7 @@ Paste the packet at the top of the new agent's session. Don't assume any prior c
 
 ## Examples
 
-| ❌ Implicit handoff | ✅ Packet handoff |
+| Don't: Implicit handoff | Do: Packet handoff |
 |---|---|
 | "Continue from where the analyst left off." | Full packet with goal · context · DoD |
 | Hand off without DoD | DoD: "draft is ≤500 words, recommendation in TL;DR, all numbers cited" |
@@ -71,7 +71,7 @@ Paste the packet at the top of the new agent's session. Don't assume any prior c
 
 ## Common Pitfalls
 
-- Hand-off without DoD → next agent over- or under-produces.
+- Hand-off without DoD -> next agent over- or under-produces.
 - Pasting the packet but stripping the constraints.
 - Assuming the next agent has access to the same connectors.
 - Forgetting to include the prior agent's output as a context link.

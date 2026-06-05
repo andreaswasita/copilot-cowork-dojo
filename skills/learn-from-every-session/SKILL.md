@@ -48,7 +48,7 @@ When the same `rule` shows up 3+ times across lessons, run `pwsh scripts/lesson-
 
 ## Examples
 
-| ❌ Weak entry | ✅ Strong entry |
+| Don't: Weak entry | Do: Strong entry |
 |---|---|
 | "Be careful with owner names." | rule: "Never accept a named-person attribution without a source link." |
 | "Section drafting is good." | rule: "For memos > 1 page, draft section-by-section — saved 30 min this session." |

@@ -44,7 +44,7 @@ Verify by spot-checking three claims against the source. If any drift, re-prompt
 
 ## Examples
 
-| ❌ Altitude-less | ✅ Altitude-set |
+| Don't: Altitude-less | Do: Altitude-set |
 |---|---|
 | "Summarize this 80-page report." | "Summarize at 30k ft for the CFO. Preserve the cash-bridge numbers. ≤120 words." |
 | Summary invents emphasis the source didn't have | Spot-check 3 claims; re-prompt if drift |

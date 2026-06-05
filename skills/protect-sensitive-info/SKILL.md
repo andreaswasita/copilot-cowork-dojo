@@ -18,7 +18,7 @@ Copilot Cowork respects your tenant's data boundaries — but the human at the k
 
 ## Quick Reference (the four-question gate)
 
-| # | Question | "Yes" → |
+| # | Question | "Yes" -> |
 |---|---|---|
 | 1 | Personal data (named person, employee, candidate, customer)? | Redact or escalate |
 | 2 | Regulated (pre-announcement financials, legal-privileged, security-incident, health, export)? | Stop; ask the right team |
@@ -34,18 +34,18 @@ Copilot Cowork respects your tenant's data boundaries — but the human at the k
 
 ## How to Use
 
-Run the four-question gate. Any "yes" → escalate before proceeding (see [governance/escalation.md](../../governance/escalation.md)).
+Run the four-question gate. Any "yes" -> escalate before proceeding (see [governance/escalation.md](../../governance/escalation.md)).
 
 1. **Personal data** — Does this contain identifiable info about a named person (employee, candidate, customer)?
 2. **Regulated data** — Is this financial pre-announcement, legal-privileged, security-incident, health, or export-controlled?
 3. **Audience boundary** — Are the people on this Cowork session cleared to see *all* of this content?
 4. **Public-channel test** — Would I be comfortable posting this in a public Teams channel?
 
-If unclear, default to: redact → check → then prompt.
+If unclear, default to: redact -> check -> then prompt.
 
 ## Examples
 
-| ❌ Unsafe | ✅ Safe |
+| Don't: Unsafe | Do: Safe |
 |---|---|
 | Paste candidate interview feedback into a "draft offer" prompt | Redact identifiers; move to HR-cleared session |
 | Ask Copilot to summarize a draft 10-Q | Stop. Pre-announcement financials. Ask Finance. |

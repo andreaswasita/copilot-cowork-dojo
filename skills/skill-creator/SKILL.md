@@ -42,7 +42,7 @@ A skill is a tested workflow with a name. Don't create one until the workflow ha
 
 ## Examples
 
-| ❌ Premature skill | ✅ Earned skill |
+| Don't: Premature skill | Do: Earned skill |
 |---|---|
 | Created from theory, never used | Created from 3+ logged lessons |
 | "Productivity tips" — vague trigger | "Triage an inbox returning from PTO" — specific |
@@ -62,7 +62,7 @@ A skill is a tested workflow with a name. Don't create one until the workflow ha
 - Skills created from theory, not from lived sessions.
 - Skills with vague descriptions — kills auto-discovery.
 - Skills that overlap heavily with existing ones.
-- Skipping the scenario walk → defects ship to teammates.
+- Skipping the scenario walk -> defects ship to teammates.
 - Forgetting the index update.
 
 ## Anti-Patterns

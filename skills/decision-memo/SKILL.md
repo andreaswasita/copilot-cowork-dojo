@@ -50,7 +50,7 @@ Cap at one page. If it doesn't fit, the options aren't sharp enough.
 
 ## Examples
 
-| ❌ Memo failure | ✅ Memo success |
+| Don't: Memo failure | Do: Memo success |
 |---|---|
 | "Let me know your thoughts." | "Ask: approve option B by Fri 11/14 EOD." |
 | Two options where one is a strawman | Three real options with honest trade-offs |

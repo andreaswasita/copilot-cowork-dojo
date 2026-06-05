@@ -24,9 +24,9 @@ Word is not a long email. Use structure — styles, headings, comments, tracked 
 |---|---|
 | New document | Open the team template first; draft section-by-section with Copilot |
 | Edit someone else's doc | Turn on **Track Changes** before any Copilot edit |
-| Long document refactor | Outline view → restructure headings → regenerate sections |
+| Long document refactor | Outline view -> restructure headings -> regenerate sections |
 | Review a draft | Copilot summary + your structured review (facts, tone, gaps, bias) |
-| Convert format (memo ↔ deck ↔ email) | Storyboard the new format first; don't auto-convert |
+| Convert format (memo <-> deck <-> email) | Storyboard the new format first; don't auto-convert |
 | Find / replace at scale | Word's built-in Find/Replace with styles, then verify three samples |
 
 ## When to Use
@@ -48,7 +48,7 @@ Word is not a long email. Use structure — styles, headings, comments, tracked 
 
 ## Examples
 
-| ❌ Anti-example | ✅ Good example |
+| Don't: Anti-example | Do: Good example |
 |---|---|
 | "Write me a 5-page strategy doc." | "Using the attached one-pager, draft Section 3 (Risks) with three Heading-2 risks; mitigation as sub-bullets." |
 | Pasting Copilot output into a blank doc and emailing. | Drafting into the team template, accepting/rejecting tracked changes, sensitivity-labeled, then sending. |

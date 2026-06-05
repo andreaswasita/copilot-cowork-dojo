@@ -23,10 +23,10 @@ PDFs are where evidence goes to die. Extract it cleanly before you synthesize, o
 | Task | Approach |
 |---|---|
 | Triage a new PDF | Classify (native vs. scan); pull metadata; identify sections |
-| Summarize a long filing | Section-by-section extraction → synthesis, never one-shot summary |
+| Summarize a long filing | Section-by-section extraction -> synthesis, never one-shot summary |
 | Pull a table | Request markdown / CSV; verify column alignment on a known row |
 | Cite a clause | Quote verbatim with section reference, not page number |
-| Multi-PDF research | Per-PDF metadata first → cross-document synthesis matrix |
+| Multi-PDF research | Per-PDF metadata first -> cross-document synthesis matrix |
 | Scanned doc | Verify OCR quality on three random sentences before trusting |
 
 ## When to Use
@@ -48,7 +48,7 @@ PDFs are where evidence goes to die. Extract it cleanly before you synthesize, o
 
 ## Examples
 
-| ❌ Anti-example | ✅ Good example |
+| Don't: Anti-example | Do: Good example |
 |---|---|
 | "Summarize this PDF." | "Extract the executive summary, the risk-factors section, and Table 4 (revenue by segment) — preserve table structure." |
 | Citing "page 7" of a 200-page filing. | Citing "Section 3.2 — Material Risks, paragraph 4." |

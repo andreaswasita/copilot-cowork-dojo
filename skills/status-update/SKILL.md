@@ -40,7 +40,7 @@ Pull last week's status and the latest data. Diff the two — only the diff is n
 
 ## Examples
 
-| ❌ Status failure | ✅ Status success |
+| Don't: Status failure | Do: Status success |
 |---|---|
 | Same update for all audiences | Three drafts; same source; different lens per audience |
 | "Everything is on track." | "Green. Q3 milestone hit (+1 day). Top risk: vendor SLA. Ask: re-scope review by Wed." |

@@ -50,7 +50,7 @@ If you can't fill every line, ask before drafting. One round of clarification be
 
 ## Examples
 
-| ❌ Vague | ✅ Clarified |
+| Don't: Vague | Do: Clarified |
 |---|---|
 | "Summarize the Contoso meeting." | "Two-paragraph recap for the exec team, covering decisions made and open risks, by 5pm — anything I should leave out?" |
 | "Draft a reply to legal." | "Polite acknowledgement to legal confirming we'll send the redlines by Friday and asking who the right CC is." |
