@@ -26,7 +26,11 @@ the workflow concepts are adapted from the Apache-2.0 sources listed below.
 No proprietary or source-available upstream content (the `docx`, `pdf`, `pptx`,
 `xlsx` skills) was copied. Where this repo's existing skills were informed by
 edge-case lists in those proprietary skills, only original-voice guidance was
-written; no upstream text was reproduced.
+written; no upstream text was reproduced. Specifically, `skills/pdf-extraction`
+was enriched with an original-voice "Hard Cases" section (fillable forms,
+encrypted/permission-restricted files, hybrid native-plus-scan documents,
+rotated pages, and large packs) that is informed by — but reproduces no text
+from — the edge-case landscape those proprietary skills address.
 
 Some skills were also enriched with methodology adapted from the
 `anthropics/claude-plugins-official` repository
