@@ -27,6 +27,19 @@ No proprietary or source-available upstream content (the `docx`, `pdf`, `pptx`,
 edge-case lists in those proprietary skills, only original-voice guidance was
 written; no upstream text was reproduced.
 
+Some skills were also enriched with methodology adapted from the
+`anthropics/claude-plugins-official` repository
+(https://github.com/anthropics/claude-plugins-official), whose plugins are
+likewise licensed under the **Apache License, Version 2.0**. The upstream
+material is in Claude Code plugin/command/agent format; the concepts were
+re-expressed as dojo skills in this repo's own structure and voice and reframed
+for the Microsoft 365 / Copilot knowledge-worker context. The plugin sources
+each ship their own `LICENSE` (Apache-2.0) in their source directory.
+
+| Dojo skill | Adapted from (anthropics/claude-plugins-official, Apache-2.0) |
+|---|---|
+| `skills/reviewing-output` | `plugins/code-review` + `plugins/pr-review-toolkit` (review workflow, confidence scoring, severity triage, specialized review passes) |
+
 The names "Anthropic" and "Claude" appear in this file solely for accurate
 attribution of upstream sources, as required by the Apache-2.0 license. They are
 not used as skill names, branding, or endorsement anywhere in this repository's
