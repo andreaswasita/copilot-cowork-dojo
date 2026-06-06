@@ -40,6 +40,7 @@ each ship their own `LICENSE` (Apache-2.0) in their source directory.
 | Dojo skill | Adapted from (anthropics/claude-plugins-official, Apache-2.0) |
 |---|---|
 | `skills/reviewing-output` | `plugins/code-review` + `plugins/pr-review-toolkit` (review workflow, confidence scoring, severity triage, specialized review passes) |
+| `skills/meeting-recap` | `plugins/session-report` (windowed analysis, share-of-total finding framing, classified one-line findings, fixes tied to specific rows — reframed as a private recurring-meeting health readout) |
 
 The names "Anthropic" and "Claude" appear in this file solely for accurate
 attribution of upstream sources, as required by the Apache-2.0 license. They are
