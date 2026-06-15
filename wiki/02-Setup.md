@@ -86,6 +86,33 @@ If your repo is public, paste this into Cowork:
 
 > ⚠️ **Skills ≠ connectors.** The 6 `*-connector` skills are *playbooks* for how to use Jira / Confluence / Teams / Outlook / OneDrive / Planner well. They do **not** install the connectors themselves. M365 connectors are usually present in Cowork on a licensed M365 tenant. Atlassian (Jira, Confluence) needs a separate MCP server install — see each connector skill's *Prerequisites* section. Without the connector, the skill is still useful as a manual reference; it just can't act autonomously.
 
+### Option 3 — Install into Microsoft Scout (local desktop)
+
+[Microsoft Scout](https://www.microsoft.com/microsoft-cloud/blog/) runs locally and is built on the same GitHub Copilot engine, so it **auto-discovers personal skills** from `~/.agents/skills` (and `<configDir>/skills`, where `configDir` is `$COPILOT_HOME` or `~/.copilot`). The Cowork Dojo skills use the standard `SKILL.md` (`name` + `description`) format, so they drop straight in — no conversion needed.
+
+From the repo root:
+
+```powershell
+pwsh scripts/install-scout.ps1            # installs to ~/.agents/skills
+pwsh scripts/install-scout.ps1 -WhatIf    # preview without writing
+```
+
+macOS / Linux without PowerShell:
+
+```bash
+scripts/install-scout.sh                  # installs to ~/.agents/skills
+DRY_RUN=1 scripts/install-scout.sh        # preview without writing
+```
+
+Install somewhere else (e.g. the config-dir location) with an argument or env var:
+
+```bash
+scripts/install-scout.sh "$HOME/.copilot/skills"
+# or: COWORK_SCOUT_SKILLS="$HOME/.copilot/skills" scripts/install-scout.sh
+```
+
+> ℹ️ **Restart Scout** after installing so it re-scans the skills folder. Re-run the script any time you pull new dojo skills — it refreshes the copies in place.
+
 ## Step 4 — Look around (90 seconds)
 
 Open these three files. Don't read them all — just see what's where:
