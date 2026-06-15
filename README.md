@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./docs/assets/banner.png?v=1" alt="Copilot Cowork Dojo" width="100%">
+
 # Copilot Cowork Dojo 🏯
 
 # A discipline framework for<br/>your Microsoft 365 Copilot work.
